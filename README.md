@@ -10,6 +10,8 @@ To export all the notes form powerpoint, just press the run macro.
 
 To import into anki go to tools -> Import from PowerPoint
 
+quotes of any sort don't work as VBA print function gets confused, but html tags do, so if you want to create a multiline card replace the newlines with `<br>` and you'll be sorted when the cards are imported into anki
+
 **Macro**
 You need to add this to your PowerPoint file when you save it locally, or you can make a template or something - all it does is export the notes and the file path to a location called ~/.anki-PPT
 
