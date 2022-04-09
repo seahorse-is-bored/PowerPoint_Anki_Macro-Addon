@@ -18,7 +18,7 @@ def checkFolder():
     Folder = absolute_path.replace(Folder, "")
     #Remove the string from the folder path to get the user directory
 
-    projecttestfolder = os.path.join(Folder, ".anki")
+    projecttestfolder = os.path.join(Folder, ".anki-PPT")
     #create variable to test for .anki folder presence
 
     if not os.path.exists(projecttestfolder):
@@ -41,7 +41,7 @@ def importOnLoad():
     addonFile = "Library/Application Support/Anki2/addons21/123_321/__init__.py"
     #truncates file path using method form checkFolder()
 
-    Folder = absolute_path.replace(addonFile, ".anki/")
+    Folder = absolute_path.replace(addonFile, ".anki-PPT/")
     #trucates
 
     list = os.listdir(Folder) 
