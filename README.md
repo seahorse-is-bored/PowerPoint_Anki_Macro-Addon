@@ -11,7 +11,9 @@ To export all the notes form powerpoint, just press the run macro.
 To import into anki go to tools -> Import from PowerPoint
 
 **Macro**
-You need to add this to your PowerPoint file when you save it locally, or you can make a template or something - all it does is export the notes and the file path to a location called ~/.anki:
+You need to add this to your PowerPoint file when you save it locally, or you can make a template or something - all it does is export the notes and the file path to a location called ~/.anki-PPT
+
+you may have to grant access to powerpoint
 
 **Addon**
 Create an addon folder (mine was called 123_321) and add the file __init__.py
