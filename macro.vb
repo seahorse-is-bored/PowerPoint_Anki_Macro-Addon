@@ -12,12 +12,12 @@ Sub MoveToAnki()
     myFile = PowerPoint.ActivePresentation.Path
     'get the path of the presentation (must be saved)
 
-    myFile = Replace(myFile, "Desktop", "") 
+    myFile = Replace(myFile, "Desktop", "")
     myFile = Replace(myFile, "Documents", "")
     myFile = Replace(myFile, "Downloads", "")
     'Modify these for the appropriate path My example was made on the desktop
 
-    myFile = myFile & ".anki" & "/"
+    myFile = myFile & ".anki-PPT" & "/"
     'add the .anki/ folder to the path
     
     For i = 1 To count Step 1
