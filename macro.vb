@@ -48,6 +48,11 @@ Sub MoveToAnki()
         
         content = oDestSlide.NotesPage.Shapes(2).TextFrame.TextRange.Text
         'get the text from the notes section (this is unfortunately plane text, so you must use html formatting tags)
+        
+        Dim fileOut As String
+        
+        fileOut = Replace(content, vbCr, insertSlide & vbCrLf)
+        'inserts image at the end of a line
 
         FilePath = myFile & CStr(i) & ".csv"
         'set the file path to .anki-PPT_Macro/i.csv
@@ -55,7 +60,7 @@ Sub MoveToAnki()
         Open FilePath For Append As #1
         'open the file
 
-        Print #1, content & insertSlide
+        Print #1, fileOut & insertSlide
         'write the content
 
         Close #1
